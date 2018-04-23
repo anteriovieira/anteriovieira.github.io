@@ -5,9 +5,10 @@
   "author": "Antério vieira <anteriovieira@gmail.com>",
   "private": true,
   "dependencies": {
+    "cross-env": "^5.1.4",
     "jstransformer-markdown-it": "^2.0.0",
     "markdown-it": "^8.2.2",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.8.3",
     "nuxt": "latest",
     "nuxt-i18n": "^2.9.2",
     "pug": "^2.0.0-beta10",
@@ -43,6 +44,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   }
 }
