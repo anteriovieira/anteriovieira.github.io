@@ -60,3 +60,4 @@ typings/
 # build output
 .next
 .nuxt/
+dist/
